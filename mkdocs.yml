@@ -28,7 +28,7 @@ extra:
     - icon: fontawesome/brands/github
       link: https://github.com/blalba
       name: blalbal
-    - icon: fontawesome/solid/rss-square
+    - icon: fontawesome/solid/square-rss
       link: https://klevervalidator.tk/feed_rss_created.xml
       name: Klever Validator RSS feed
 copyright: Copyright &copy; 2022 Stan Dimi
