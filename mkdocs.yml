@@ -1,0 +1,56 @@
+site_name: Klvvalidator
+site_url: https://klvvalidator.tk
+repo_url: https://github.com/nightwatch92/klevervalidator
+
+# https://squidfunk.github.io/mkdocs-material/
+theme:
+  name: material
+  favicon: assets/images/favicon.ico
+  font: false
+  # https://materialdesignicons.com/
+  icon:
+    logo: material/human-greeting
+    logo_tech: material/bash
+    logo_fpv: material/quadcopter
+  features:
+    - navigation.tabs
+    - navigation.expand
+    - navigation.sections
+    - toc.integrate
+  custom_dir: theme_overrides
+extra_css:
+  - assets/stylesheets/extra.css
+extra:
+  social:
+    - icon: fontawesome/brands/twitter
+      link: https://twitter.com/klvblabla
+      name: KLV on twitter
+    - icon: fontawesome/brands/github
+      link: https://github.com/blalba
+      name: blalbal
+    - icon: fontawesome/solid/rss-square
+      link: https://klevervalidator.tk/feed_rss_created.xml
+      name: Klever Validator RSS feed
+copyright: Copyright &copy; 2022 Stan Dimi
+
+# https://facelessuser.github.io/pymdown-extensions/
+markdown_extensions:
+  - attr_list
+  - admonition
+  - toc:
+      permalink: true
+  - pymdownx.emoji:
+      emoji_index: !!python/name:materialx.emoji.twemoji
+      emoji_generator: !!python/name:materialx.emoji.to_svg
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.superfences
+
+plugins:
+  - awesome-pages:
+      strict: false
+  - redirects
+  - search
+  - mkdocs-simple-hooks:
+      hooks:
+        on_config: "hooks.on_config:deploy_hooks"
